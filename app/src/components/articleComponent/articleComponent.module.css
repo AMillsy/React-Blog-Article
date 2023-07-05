@@ -1,3 +1,14 @@
 h2 {
-  color: red;
+  padding: 10px;
+  margin: 0;
+  color: #ff5154;
+  font-size: 250%;
+}
+p {
+  white-space: pre-wrap;
+}
+
+.articleContainer {
+  height: 100vh;
+  background-color: #d6f6dd;
 }

@@ -1,4 +1,4 @@
-import "./articleComponent.module.css";
+import styles from "./articleComponent.module.css";
 
 interface ArticleData {
   title: string;
@@ -6,10 +6,11 @@ interface ArticleData {
 }
 
 function ArticleComponent(data: ArticleData) {
+  function renderContent() {}
   return (
-    <div>
+    <div className={styles.articleContainer}>
       <h2>{data.title}</h2>
-      <p>Random things</p>
+      <article>{data.content}</article>
     </div>
   );
 }
