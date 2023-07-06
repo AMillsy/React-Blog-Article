@@ -4,8 +4,9 @@ h2 {
   color: #ff5154;
   font-size: 250%;
 }
-p {
-  white-space: pre-wrap;
+
+article {
+  background-color: #d6f6dd;
 }
 
 .articleContainer {
