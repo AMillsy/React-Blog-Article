@@ -7,6 +7,8 @@ function Layout() {
     <>
       <NavComponent></NavComponent>
       <Outlet />
+
+      <footer>Designed by Adam Mills</footer>
     </>
   );
 }

@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import styles from "./navComponent.module.css";
 
 function NavComponent() {
-  function latestClicked() {
-    console.log(`We are being clicked`);
-  }
   return (
     <nav>
       <header className={styles.navContainer}>
