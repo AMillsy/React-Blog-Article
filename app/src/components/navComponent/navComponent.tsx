@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./navComponent.module.css";
 
 function NavComponent() {
@@ -5,27 +6,29 @@ function NavComponent() {
     console.log(`We are being clicked`);
   }
   return (
-    <header className={styles.navContainer}>
-      <h1>BlogTastic</h1>
-      <ul className={styles.navSystem}>
-        <li>
-          <button onClick={latestClicked}>Latest</button>
-        </li>
-        <li>
-          <div className={styles.dropdown}>
-            <button>Categories</button>
-            <div className={styles.dropdownContent}>
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+    <nav>
+      <header className={styles.navContainer}>
+        <h1>BlogTastic</h1>
+        <ul className={styles.navSystem}>
+          <li>
+            <Link to="/">Latest</Link>
+          </li>
+          <li>
+            <div className={styles.dropdown}>
+              <Link to="/blogs">Categories</Link>
+              <div className={styles.dropdownContent}>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <button>Other</button>
-        </li>
-      </ul>
-    </header>
+          </li>
+          <li>
+            <Link to="/contact">Other</Link>
+          </li>
+        </ul>
+      </header>
+    </nav>
   );
 }
 
