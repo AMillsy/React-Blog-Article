@@ -25,6 +25,7 @@ function Home() {
         {renderNewCards().map((blog) => (
           <ArticleCardComponent
             key={blog.id}
+            id={blog.id}
             title={blog.title}
             description={blog.description}
           ></ArticleCardComponent>

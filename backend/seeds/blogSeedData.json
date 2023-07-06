@@ -1,12 +1,21 @@
 [
   {
+    "id": 1,
     "title": "When a boy becomes a man",
     "author": "John Doe",
     "description": "Something about a boy",
     "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque sodales tellus, sed convallis ipsum consectetur eget. Quisque suscipit magna id tortor malesuada commodo. In facilisis, nulla in maximus porttitor, lorem eros euismod erat, eget commodo purus orci ac turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vitae gravida nulla. Vivamus commodo fringilla augue, sit amet congue arcu semper ut. Cras congue viverra lacus, ut accumsan libero porttitor ac. Integer ut sagittis lectus. Suspendisse consequat dui et urna vulputate condimentum. Nam iaculis diam quis erat viverra, at tristique leo congue. Sed ex tellus, mattis bibendum mauris non, porta bibendum urna."
   },
   {
+    "id": 2,
     "title": "Another book title",
+    "author": "Jason Matthew",
+    "description": "A book about being a book",
+    "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque sodales tellus, sed convallis ipsum consectetur eget. Quisque suscipit magna id tortor malesuada commodo. In facilisis, nulla in maximus porttitor, lorem eros euismod erat, eget commodo purus orci ac turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vitae gravida nulla. Vivamus commodo fringilla augue, sit amet congue arcu semper ut. Cras congue viverra lacus, ut accumsan libero porttitor ac. Integer ut sagittis lectus. Suspendisse consequat dui et urna vulputate condimentum. Nam iaculis diam quis erat viverra, at tristique leo congue. Sed ex tellus, mattis bibendum mauris non, porta bibendum urna."
+  },
+  {
+    "id": 3,
+    "title": "A tale about two sons",
     "author": "Jason Matthew",
     "description": "A book about being a book",
     "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque sodales tellus, sed convallis ipsum consectetur eget. Quisque suscipit magna id tortor malesuada commodo. In facilisis, nulla in maximus porttitor, lorem eros euismod erat, eget commodo purus orci ac turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vitae gravida nulla. Vivamus commodo fringilla augue, sit amet congue arcu semper ut. Cras congue viverra lacus, ut accumsan libero porttitor ac. Integer ut sagittis lectus. Suspendisse consequat dui et urna vulputate condimentum. Nam iaculis diam quis erat viverra, at tristique leo congue. Sed ex tellus, mattis bibendum mauris non, porta bibendum urna."

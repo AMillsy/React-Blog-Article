@@ -6,7 +6,8 @@ async function seedData() {
 
   const blogData = await Blog.bulkCreate(data);
 
-  console.log(blogData);
+  const blogs = blogData.map((blog) => blog.get({ plain: true }));
+  console.log(blogs);
 }
 
 seedData();
