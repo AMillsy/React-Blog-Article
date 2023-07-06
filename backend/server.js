@@ -4,7 +4,7 @@ const router = require("./routes");
 const models = require(`./models`);
 const app = express();
 
-const PORT = 3001;
+const PORT = 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -12,6 +12,6 @@ app.use(router);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
-    console.log(`API IS OPEN`);
+    console.log(`Port listening on ${PORT}`);
   });
 });

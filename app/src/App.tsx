@@ -6,8 +6,6 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Layout from "./pages/Layout";
 import Contact from "./pages/Contact";
-import ArticleComponent from "./components/articleComponent";
-import NavComponent from "./components/navComponent";
 function App() {
   return (
     <BrowserRouter>
