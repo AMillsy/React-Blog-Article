@@ -1,32 +1,31 @@
 import ArticleComponent from "../components/articleComponent";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
+import blogData from "./blog.json";
+import { Article } from "../definitons";
 
-//DOESNT WORK NEED TO GET STATES WORKING
-export default class Blogs extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      value: this.props.location.state,
-    };
-  }
+function Blogs() {
+  const [article, setArticle] = useState<Article | null>(null);
+  const params = useParams();
+  useEffect(() => {
+    if (!article) {
+      fetch(`/api/blogs/${params.id}`).then(async (response) => {
+        const res = await response.json();
+        setArticle(res);
+      });
+    }
+  }, [article, params]);
 
-  findCard() {
-    fetch("/api/blogs").then((response) => {
-      console.log(response);
-    });
-  }
+  if (!article) return null;
 
-  render(): any {
-    this.findCard();
-    return (
-      <ArticleComponent
-        //REPLACE KEY WITH THE BLOGS ID
-        key={1}
-        title="Something"
-        content="A
-    B
-    C"
-      ></ArticleComponent>
-    );
-  }
+  return (
+    <ArticleComponent
+      //REPLACE KEY WITH THE BLOGS ID
+      key={article.id}
+      title={article.title}
+      content={article.article_content}
+    ></ArticleComponent>
+  );
 }
+
+export default Blogs;

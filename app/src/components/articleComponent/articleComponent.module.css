@@ -7,6 +7,7 @@ h2 {
 
 article {
   background-color: #d6f6dd;
+  white-space: pre-wrap;
 }
 
 .articleContainer {

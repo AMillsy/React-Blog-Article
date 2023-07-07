@@ -12,8 +12,7 @@ function ArticleCardComponent(data: CardInterface) {
   const navigate = useNavigate();
 
   function clickedCard(e: React.ChangeEvent<any>) {
-    console.log(e.target.dataset.id);
-    navigate("/blogs", { state: data.id });
+    navigate(`/blogs/${data.id}`);
   }
 
   return (

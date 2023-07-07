@@ -8,21 +8,14 @@ interface blogData {
 }
 
 function Home() {
-  function renderNewCards() {
-    console.log(blogs);
-    const blogsArr: Array<blogData> = [];
-    blogs.forEach(({ id, title, description }: blogData) => {
-      blogsArr.push({ id, title, description });
-    });
-    return blogsArr;
-  }
+  const renderedBlogs: Array<blogData> = blogs.map((blog) => blog);
 
   return (
     <>
       <h2>Welcome to the page</h2>
       <p>This is the home page</p>
       <article className={styles.cardContainer}>
-        {renderNewCards().map((blog) => (
+        {renderedBlogs.map((blog) => (
           <ArticleCardComponent
             key={blog.id}
             id={blog.id}
